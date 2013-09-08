@@ -1,9 +1,15 @@
 #!/usr/bin/python
 
 import sys
+import os
 import datetime
 import urllib3
 import xml.etree.ElementTree as ET
+
+# Change working directory if necessary
+file_path = os.path.dirname(__file__)
+if file_path != "":
+    os.chdir(file_path)
 
 if len(sys.argv) != 2:
     exit('Usage : velib_stats.py Station_number')

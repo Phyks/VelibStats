@@ -13,6 +13,9 @@ velib_stats.py NUMERO_DE_STATION
 
 Pour trouver le numéro unique identifiant la station qui vous intéresse, rendez-vous sur le site de Vélib (http://www.velib.paris.fr/Plan-stations) et recupérez le numéro de la station qui vous intéresse dans l'infobulle.
 
+## Pré-requis
+Vous aurez besoin de python3 et du module urllib3 (à installer avec pip au besoin) pour utiliser ce script.
+
 ## License
 Please, send me an email if you use or modify this program, just to let me know if this program is useful to anybody or how did you improve it :) You can also send me an email to tell me how lame it is ! :)
 
