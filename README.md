@@ -1,9 +1,17 @@
 VelibStats
 =========
 
-Ce petit script permet de vérifier à intervalle réguliers (à lancer _via_ une tâche Cron) l'état des stations de Vélib que vous souhaitez surveiller. Il est ainsi possible de récupérer un graphe d'utilisation des stations que vous utilisez fréquemment en fonction de l'heure de la journée / du jour de la semaine etc.
+Ce petit script permet de vérifier à intervalle réguliers (à lancer _via_ une tâche Cron) l'état des stations de Vélib que vous souhaitez surveiller. Il est ainsi possible de récupérer un graphe d'utilisation des stations que vous utilisez fréquemment en fonction de l'heure de la journée / du jour de la semaine etc. C'est également un petit exemple d'utilisation de l'API REST de Vélib en Python.
 
-**Important note : Je suis en train de modifier ce script et supprimerait ce message lorsque celui-ci sera pleinement utilisable.**
+## Utilisation
+Ce script sert à surveiller une station et à noter les vélos disponibles et les emplacements disponibles à chaque exécution, afin d'avoir des statistiques sur les stations alentours.
+
+Il s'utilise en ligne de commande :
+```` 
+velib_stats.py NUMERO_DE_STATION 
+````
+
+Pour trouver le numéro unique identifiant la station qui vous intéresse, rendez-vous sur le site de Vélib (http://www.velib.paris.fr/Plan-stations) et recupérez le numéro de la station qui vous intéresse dans l'infobulle.
 
 ## License
 Please, send me an email if you use or modify this program, just to let me know if this program is useful to anybody or how did you improve it :) You can also send me an email to tell me how lame it is ! :)
