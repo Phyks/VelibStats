@@ -39,8 +39,9 @@ if r.status == 200:
                 if "Jour" in line:
                     previous_day = line[7:]
         # If today != last day of update, add a header
-        if (previous_day[:2] != today.strftime('%d') and
-           previous_day[2:] != today.strftime('%m')):
+        previous_day = previous_day.split("/")
+        if (previous_day[0] != today.strftime('%d') and
+           previous_day[1] != today.strftime('%m')):
             write = ("Jour = "+today.strftime('%d/%m')+"\n" +
                      "======================\n" +
                      "Heure\t\tMin\t\tDispos\t\tPlaces\n" +
